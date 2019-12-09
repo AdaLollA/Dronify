@@ -1,5 +1,12 @@
 {
-  "APPLE": "Apfel",
-  "BALL": "Ball",
-  "CAT": "Katze"
+  "TITLE": "Dronify",
+  "RESULT": "Ergebnis",
+  "LAW": "Gesetz",
+  "DRONE": "Drohne",
+
+  "JOULE_DESC": "Energie",
+  "HEIGHT_DESC": "Höhe",
+
+  "INTRO": "Diese Anwendung hilft dabei die gesetzlichen Vorschriften besser zu verstehen und einzuhalten.",
+  "WEIGHT_PLACEHOLDER": "Drohnengewicht"
 }

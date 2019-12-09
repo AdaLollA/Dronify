@@ -1,14 +1,66 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      {{ 'APPLE' | translate}}
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            {{ 'TITLE' | translate}}
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+    <div class="ion-padding">
+        <p class="soft" text-center>{{ 'INTRO' | translate }}</p>
+    </div>
+
+    <ion-row justify-content-center>
+        <div class="divider"></div>
+    </ion-row>
+
+    <h5 class="no-spacing" text-center>{{ 'LAW' | translate }}</h5>
+
+    <ion-row class="no-spacing" padding justify-content-center>
+        <ion-col size="5">
+            <ion-row justify-content-end align-items-center class="full-size">
+                <ion-input class="align-right" type="number" value="79"
+                           clearInput (ionChange)="updateGovEnergy($event)"></ion-input>
+            </ion-row>
+        </ion-col>
+        <ion-col size="4">
+            <p>J - {{ 'JOULE_DESC' | translate }}</p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="no-spacing" padding justify-content-center>
+        <ion-col size="5">
+            <ion-row justify-content-end align-items-center class="full-size">
+                <ion-input class="align-right" type="number" value="30"
+                           clearInput (ionChange)="updateGovHeight($event)"></ion-input>
+            </ion-row>
+        </ion-col>
+        <ion-col size="4">
+            <p>m - {{ 'HEIGHT_DESC' | translate }}</p>
+        </ion-col>
+    </ion-row>
+
+    <h5 class="no-spacing" text-center>{{ 'DRONE' | translate }}</h5>
+
+    <ion-row class="no-spacing" padding justify-content-center>
+        <ion-col size="5">
+            <ion-row justify-content-end align-items-center class="full-size">
+                <ion-input class="align-right" type="number" placeholder="{{ 'WEIGHT_PLACEHOLDER' | translate }}"
+                           clearInput (ionChange)="updateWeight($event)"></ion-input>
+            </ion-row>
+        </ion-col>
+        <ion-col size="4">
+            <ion-select value="g" (ionChange)="updateUnit($event)">
+                <ion-select-option value="g">g</ion-select-option>
+                <ion-select-option value="kg">kg</ion-select-option>
+            </ion-select>
+        </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-center>
+        <div class="divider"></div>
+    </ion-row>
+
+    <h3 text-center>{{ 'RESULT' | translate }}</h3>
 </ion-content>

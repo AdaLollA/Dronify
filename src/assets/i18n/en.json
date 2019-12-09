@@ -1,5 +1,12 @@
 {
-  "APPLE": "Apple",
-  "BALL": "Ball",
-  "CAT": "Cat"
+  "TITLE": "Dronify",
+  "RESULT": "Result",
+  "LAW": "Law",
+  "DRONE": "Drone",
+
+  "JOULE_DESC": "Energy",
+  "HEIGHT_DESC": "Height",
+
+  "INTRO": "This application assists the user in the field of drone piloting in a way where it provides information to better understand the law around it.",
+  "WEIGHT_PLACEHOLDER": "Drone Weight"
 }
