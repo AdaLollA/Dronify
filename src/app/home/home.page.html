@@ -8,18 +8,18 @@
 
 <ion-content>
     <div class="ion-padding">
-        <p class="soft" text-center>{{ 'INTRO' | translate }}</p>
+        <p class="soft ion-text-center">{{ 'INTRO' | translate }}</p>
     </div>
 
-    <ion-row justify-content-center>
+    <ion-row class="ion-justify-content-center">
         <div class="divider"></div>
     </ion-row>
 
-    <h5 class="no-spacing" text-center>{{ 'LAW' | translate }}</h5>
+    <h5 class="no-spacing ion-text-center">{{ 'LAW' | translate }}</h5>
 
-    <ion-row class="no-spacing" padding justify-content-center>
+    <ion-row class="no-spacing ion-justify-content-center ion-padding">
         <ion-col size="5">
-            <ion-row justify-content-end align-items-center class="full-size">
+            <ion-row class="full-size ion-justify-content-end ion-align-items-center">
                 <ion-input class="align-right" type="number" value="79"
                            clearInput (ionChange)="updateGovEnergy($event)"></ion-input>
             </ion-row>
@@ -29,9 +29,9 @@
         </ion-col>
     </ion-row>
 
-    <ion-row class="no-spacing" padding justify-content-center>
+    <ion-row class="no-spacing ion-justify-content-center ion-padding">
         <ion-col size="5">
-            <ion-row justify-content-end align-items-center class="full-size">
+            <ion-row class="full-size ion-justify-content-end ion-align-items-center">
                 <ion-input class="align-right" type="number" value="30"
                            clearInput (ionChange)="updateGovHeight($event)"></ion-input>
             </ion-row>
@@ -41,11 +41,11 @@
         </ion-col>
     </ion-row>
 
-    <h5 class="no-spacing" text-center>{{ 'DRONE' | translate }}</h5>
+    <h5 class="no-spacing ion-text-center">{{ 'DRONE' | translate }}</h5>
 
-    <ion-row class="no-spacing" padding justify-content-center>
+    <ion-row class="no-spacing ion-justify-content-center ion-padding">
         <ion-col size="5">
-            <ion-row justify-content-end align-items-center class="full-size">
+            <ion-row class="full-size ion-justify-content-end ion-align-items-center">
                 <ion-input class="align-right" type="number" placeholder="{{ 'WEIGHT_PLACEHOLDER' | translate }}"
                            clearInput (ionChange)="updateWeight($event)"></ion-input>
             </ion-row>
@@ -58,9 +58,9 @@
         </ion-col>
     </ion-row>
 
-    <ion-row justify-content-center>
+    <ion-row class="ion-justify-content-center">
         <div class="divider"></div>
     </ion-row>
 
-    <h3 text-center>{{ 'RESULT' | translate }}</h3>
+    <h3 class="ion-text-center">{{ 'RESULT' | translate }}</h3>
 </ion-content>
