@@ -63,4 +63,8 @@ export class HomePage {
         this.govHeight = $event.detail.value;
         this.update();
     }
+
+    round(num): number {
+        return Math.round(num * 100) / 100
+    }
 }

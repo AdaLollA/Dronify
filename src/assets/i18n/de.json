@@ -8,5 +8,9 @@
   "HEIGHT_DESC": "Höhe",
 
   "INTRO": "Diese Anwendung hilft dabei die gesetzlichen Vorschriften besser zu verstehen und einzuhalten.",
-  "WEIGHT_PLACEHOLDER": "Drohnengewicht"
+  "WEIGHT_PLACEHOLDER": "Drohnengewicht",
+
+  "RES_HEIGHT": "Erlaubte Flughöhe",
+  "RES_ENERGY": "Berechnete Energie",
+  "RES_PERCENT": "Prozentuelle Leistung"
 }
