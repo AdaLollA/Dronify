@@ -72,19 +72,19 @@
 
     <h3 class="ion-text-center">{{ 'RESULT' | translate }}</h3>
 
-    <ion-card>
+    <ion-card class="result-card-allowed" [ngClass]="{'result-card-forbidden' : maxHeight <= 0}">
         <ion-card-content>
             <ion-row class="ion-justify-content-between">
                 <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_HEIGHT' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ maxHeight > 0 ? round(maxHeight) : 0 }}</p></ion-col>
+                <ion-col size="5"><p class="ion-text-center">{{ maxHeight > 0 ? round(maxHeight) : 0 }} m</p></ion-col>
             </ion-row>
             <ion-row class="ion-justify-content-between">
                 <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_ENERGY' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ round(energy) }}</p></ion-col>
+                <ion-col size="5"><p class="ion-text-center">{{ round(energy) }} J</p></ion-col>
             </ion-row>
             <ion-row class="ion-justify-content-between">
                 <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_PERCENT' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ round(percentOfAllowedPowerAtMaxAlt) }}</p></ion-col>
+                <ion-col size="5"><p class="ion-text-center">{{ round(percentOfAllowedPowerAtMaxAlt) }} %</p></ion-col>
             </ion-row>
         </ion-card-content>
     </ion-card>

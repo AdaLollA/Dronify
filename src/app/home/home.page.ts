@@ -18,6 +18,10 @@ export class HomePage {
     govHeight = 30; // as regulated by the austrian government in most cities
     govEnergy = 79; // as regulated by the austrian government in most cities
 
+    resultClass;
+    resultClassAllowed = 'result-card-allowed';
+    resultClassForbidden = 'result-card-forbidden';
+
     constructor(public translate: TranslateService) {
         this.translate.setDefaultLang('en');
         // this.translate.use('de');
@@ -37,10 +41,7 @@ export class HomePage {
                 this.govHeight - this.govHeight * (this.percentOfAllowedPowerAtMaxAlt/100 - 1)
                 : this.govHeight;
 
-            console.log('---');
-            console.log('e: '+this.energy);
-            console.log('h: '+this.maxHeight); // todo if maxheight is negative the drone is illegal to be flown
-            console.log('p: '+this.percentOfAllowedPowerAtMaxAlt);
+            this.resultClass = this.maxHeight > 0 ? this.resultClassAllowed : this.resultClassForbidden;
         }
     }
 

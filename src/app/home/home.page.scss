@@ -29,3 +29,11 @@
 .grey-background {
   --background: var(--ion-color-light-shade);
 }
+
+.result-card-allowed {
+  --background: var(--ion-color-success-tint);
+}
+
+.result-card-forbidden {
+  --background: var(--ion-color-danger-tint);
+}
