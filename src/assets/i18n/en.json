@@ -3,8 +3,11 @@
   "RESULT": "Result",
   "LAW": "Law",
   "DRONE": "Drone",
-  "POPULAR_DRONE": "Either choose one of these popular drones",
+  "POPULAR_DRONE": "Either choose one of these popular drones:",
   "CUSTOM_DRONE": "or provide the weight of your drone here:",
+
+  "ALLOWED": "ALLOWED",
+  "FORBIDDEN": "FORBIDDEN",
 
   "JOULE_DESC": "Energy",
   "HEIGHT_DESC": "Height",

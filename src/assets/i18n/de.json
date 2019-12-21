@@ -3,8 +3,11 @@
   "RESULT": "Ergebnis",
   "LAW": "Gesetz",
   "DRONE": "Drohne",
-  "POPULAR_DRONE": "Wähle entweder eine dieser beliebten Drohnen",
+  "POPULAR_DRONE": "Wähle entweder eine dieser beliebten Drohnen:",
   "CUSTOM_DRONE": "oder gib das Gewicht deiner Drohne hier ein:",
+
+  "ALLOWED": "ERLAUBT",
+  "FORBIDDEN": "VERBOTEN",
 
   "JOULE_DESC": "Energie",
   "HEIGHT_DESC": "Höhe",

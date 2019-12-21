@@ -68,4 +68,9 @@ export class HomePage {
     round(num): number {
         return Math.round(num * 100) / 100
     }
+
+    setWeight(num: number) {
+        this.weight = num;
+        this.update();
+    }
 }
