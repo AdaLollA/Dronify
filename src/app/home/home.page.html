@@ -20,7 +20,7 @@
     <ion-row class="no-spacing ion-justify-content-center ion-padding">
         <ion-col size="5">
             <ion-row class="full-size ion-justify-content-end ion-align-items-center">
-                <ion-input class="align-right" type="number" value="79"
+                <ion-input class="align-right grey-background" type="number" value="79"
                            clearInput (ionChange)="updateGovEnergy($event)"></ion-input>
             </ion-row>
         </ion-col>
@@ -32,7 +32,7 @@
     <ion-row class="no-spacing ion-justify-content-center ion-padding">
         <ion-col size="5">
             <ion-row class="full-size ion-justify-content-end ion-align-items-center">
-                <ion-input class="align-right" type="number" value="30"
+                <ion-input class="align-right grey-background" type="number" value="30"
                            clearInput (ionChange)="updateGovHeight($event)"></ion-input>
             </ion-row>
         </ion-col>
@@ -43,10 +43,18 @@
 
     <h5 class="no-spacing ion-text-center">{{ 'DRONE' | translate }}</h5>
 
+    <div class="ion-padding">
+        <p class="soft ion-text-center">{{ 'POPULAR_DRONE' | translate }}</p>
+    </div>
+
+    <div class="ion-padding">
+        <p class="soft ion-text-center">{{ 'CUSTOM_DRONE' | translate }}</p>
+    </div>
+
     <ion-row class="no-spacing ion-justify-content-center ion-padding">
         <ion-col size="5">
             <ion-row class="full-size ion-justify-content-end ion-align-items-center">
-                <ion-input class="align-right" type="number" placeholder="{{ 'WEIGHT_PLACEHOLDER' | translate }}"
+                <ion-input class="align-right grey-background" type="number" placeholder="{{ 'WEIGHT_PLACEHOLDER' | translate }}"
                            clearInput (ionChange)="updateWeight($event)"></ion-input>
             </ion-row>
         </ion-col>
@@ -68,7 +76,7 @@
         <ion-card-content>
             <ion-row class="ion-justify-content-between">
                 <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_HEIGHT' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ round(maxHeight) }}</p></ion-col>
+                <ion-col size="5"><p class="ion-text-center">{{ maxHeight > 0 ? round(maxHeight) : 0 }}</p></ion-col>
             </ion-row>
             <ion-row class="ion-justify-content-between">
                 <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_ENERGY' |translate }}</b></p></ion-col>
