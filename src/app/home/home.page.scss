@@ -1,5 +1,6 @@
 .soft {
   color: grey;
+  font-size: 14px;
 }
 
 .full-size {
@@ -18,7 +19,9 @@
 .divider {
   background: lightgray;
   height: 1px;
-  width: 80%;
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .no-spacing {
@@ -40,4 +43,12 @@
 
 .result-card-forbidden {
   --background: var(--ion-color-danger-tint);
+}
+
+.black {
+  color: black;
+}
+
+.result-card {
+  margin-top: 12px;
 }

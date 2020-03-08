@@ -8,7 +8,7 @@
 
 <ion-content>
     <div class="ion-padding">
-        <p class="soft ion-text-center">{{ 'INTRO' | translate }}</p>
+        <p class="soft ion-text-center no-spacing">{{ 'INTRO' | translate }}</p>
     </div>
 
     <ion-row class="ion-justify-content-center">
@@ -41,16 +41,20 @@
         </ion-col>
     </ion-row>
 
+    <ion-row class="ion-justify-content-center">
+        <div class="divider"></div>
+    </ion-row>
+
     <h5 class="no-spacing ion-text-center">{{ 'DRONE' | translate }}</h5>
 
     <div class="ion-padding">
         <p class="soft ion-text-center ion-no-margin">{{ 'POPULAR_DRONE' | translate }}</p>
     </div>
 
-    <ion-row>
-        <ion-col size="4"><ion-button class="full-width" (click)="setWeight(300)">DJI Spark</ion-button></ion-col>
-        <ion-col size="4"><ion-button class="full-width" (click)="setWeight(430)">DJI Mavic Air</ion-button></ion-col>
-        <ion-col size="4"><ion-button class="full-width" (click)="setWeight(734)">DJI Mavic Pro</ion-button></ion-col>
+    <ion-row class="ion-padding-start ion-padding-end">
+        <ion-col size="4"><ion-button class="full-width" size="small" (click)="setWeight(300)">Spark</ion-button></ion-col>
+        <ion-col size="4"><ion-button class="full-width" size="small" (click)="setWeight(430)">Mavic Air</ion-button></ion-col>
+        <ion-col size="4"><ion-button class="full-width" size="small" (click)="setWeight(734)">Mavic Pro</ion-button></ion-col>
     </ion-row>
 
     <div class="ion-padding">
@@ -76,24 +80,24 @@
         <div class="divider"></div>
     </ion-row>
 
-    <h3 class="ion-text-center">{{ 'RESULT' | translate }}</h3>
+    <h3 class="ion-text-center no-spacing"><b>{{ 'RESULT' | translate }}:</b></h3>
 
-    <ion-card class="result-card-allowed" [ngClass]="{'result-card-forbidden' : maxHeight < 0}">
+    <ion-card class="result-card-allowed result-card" [ngClass]="{'result-card-forbidden' : maxHeight < 0}">
         <ion-card-content>
             <ion-row class="ion-justify-content-center ion-margin-bottom">
-                <h1>{{ (maxHeight < 0 ? 'FORBIDDEN' : 'ALLOWED' ) | translate }}</h1>
+                <h1 class="black">{{ (maxHeight < 0 ? 'FORBIDDEN' : 'ALLOWED' ) | translate }}</h1>
             </ion-row>
             <ion-row class="ion-justify-content-between">
-                <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_HEIGHT' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ maxHeight > 0 ? round(maxHeight) : 0 }} m</p></ion-col>
+                <ion-col size="6"><p class="ion-text-center black"> <b>{{ 'RES_HEIGHT' |translate }}</b></p></ion-col>
+                <ion-col size="6"><p class="ion-text-center black">{{ maxHeight > 0 ? round(maxHeight) : 0 }} m</p></ion-col>
             </ion-row>
             <ion-row class="ion-justify-content-between">
-                <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_ENERGY' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ round(energy) }} J</p></ion-col>
+                <ion-col size="6"><p class="ion-text-center black"> <b>{{ 'RES_ENERGY' |translate }}</b></p></ion-col>
+                <ion-col size="6"><p class="ion-text-center black">{{ round(energy) }} J</p></ion-col>
             </ion-row>
             <ion-row class="ion-justify-content-between">
-                <ion-col size="5"><p class="ion-text-center"> <b>{{ 'RES_PERCENT' |translate }}</b></p></ion-col>
-                <ion-col size="5"><p class="ion-text-center">{{ round(percentOfAllowedPowerAtMaxAlt) }} %</p></ion-col>
+                <ion-col size="6"><p class="ion-text-center black"> <b>{{ 'RES_PERCENT' |translate }}</b></p></ion-col>
+                <ion-col size="6"><p class="ion-text-center black">{{ round(percentOfAllowedPowerAtMaxAlt) }} %</p></ion-col>
             </ion-row>
         </ion-card-content>
     </ion-card>
