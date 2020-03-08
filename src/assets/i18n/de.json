@@ -17,5 +17,7 @@
 
   "RES_HEIGHT": "Erlaubte Flughöhe",
   "RES_ENERGY": "Berechnete Energie",
-  "RES_PERCENT": "Prozentuelle Leistung"
+  "RES_PERCENT": "Prozentuelle Leistung",
+
+  "RESULT_PLACEHOLDER": "Bitte geben Sie die richtigen rechtlich relevanten-, sowie drohnenspezifischen Daten an um den Legalitätsbericht zu erhalten."
 }

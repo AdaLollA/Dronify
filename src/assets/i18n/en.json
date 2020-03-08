@@ -17,5 +17,7 @@
 
   "RES_HEIGHT": "Allowed Height",
   "RES_ENERGY": "Calculated Energy",
-  "RES_PERCENT": "Percentual Power"
+  "RES_PERCENT": "Percentual Power",
+
+  "RESULT_PLACEHOLDER": "Please provide the correct law data as well as the drones weight to see the legality report of your drone"
 }

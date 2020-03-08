@@ -7,14 +7,17 @@
 </ion-header>
 
 <ion-content>
+    <!-- intro text -->
     <div class="ion-padding">
         <p class="soft ion-text-center no-spacing">{{ 'INTRO' | translate }}</p>
     </div>
 
+    <!-- divider -->
     <ion-row class="ion-justify-content-center">
         <div class="divider"></div>
     </ion-row>
 
+    <!-- law input section -->
     <h5 class="no-spacing ion-text-center">{{ 'LAW' | translate }}</h5>
 
     <ion-row class="no-spacing ion-justify-content-center ion-padding">
@@ -41,22 +44,26 @@
         </ion-col>
     </ion-row>
 
+    <!-- divider -->
     <ion-row class="ion-justify-content-center">
         <div class="divider"></div>
     </ion-row>
 
+    <!-- drone input section -->
     <h5 class="no-spacing ion-text-center">{{ 'DRONE' | translate }}</h5>
 
     <div class="ion-padding">
         <p class="soft ion-text-center ion-no-margin">{{ 'POPULAR_DRONE' | translate }}</p>
     </div>
 
+    <!-- drone presets -->
     <ion-row class="ion-padding-start ion-padding-end">
         <ion-col size="4"><ion-button class="full-width" size="small" (click)="setWeight(300)">Spark</ion-button></ion-col>
         <ion-col size="4"><ion-button class="full-width" size="small" (click)="setWeight(430)">Mavic Air</ion-button></ion-col>
         <ion-col size="4"><ion-button class="full-width" size="small" (click)="setWeight(734)">Mavic Pro</ion-button></ion-col>
     </ion-row>
 
+    <!-- custom drone input section -->
     <div class="ion-padding">
         <p class="soft ion-text-center ion-no-margin">{{ 'CUSTOM_DRONE' | translate }}</p>
     </div>
@@ -76,13 +83,15 @@
         </ion-col>
     </ion-row>
 
+    <!-- divider -->
     <ion-row class="ion-justify-content-center">
         <div class="divider"></div>
     </ion-row>
 
     <h3 class="ion-text-center no-spacing"><b>{{ 'RESULT' | translate }}:</b></h3>
 
-    <ion-card class="result-card-allowed result-card" [ngClass]="{'result-card-forbidden' : maxHeight < 0}">
+    <!-- result card -->
+    <ion-card *ngIf="weight" class="result-card-allowed result-card" [ngClass]="{'result-card-forbidden' : maxHeight < 0}">
         <ion-card-content>
             <ion-row class="ion-justify-content-center ion-margin-bottom">
                 <h1 class="black">{{ (maxHeight < 0 ? 'FORBIDDEN' : 'ALLOWED' ) | translate }}</h1>
@@ -101,4 +110,9 @@
             </ion-row>
         </ion-card-content>
     </ion-card>
+
+    <!-- placeholder result until data is available -->
+    <div *ngIf="!weight" class="ion-padding">
+        <p class="soft ion-text-center no-spacing">{{ 'RESULT_PLACEHOLDER' | translate }}</p>
+    </div>
 </ion-content>
